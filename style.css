@@ -110,7 +110,7 @@ input,
     background-color: white; /* Match the background color */
     border-bottom: 2px solid #bf9456; /* Black bottom border */
     border-radius: 0;
-    color: white;
+    color: black;
     box-shadow: none; /* Remove any default shadow */
     outline: none; /* Remove outline on focus */
 }
@@ -146,7 +146,19 @@ button:hover {
 .footer-links a:hover {
     text-decoration: underline;
 }
-
+#download_section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #666;
+    font-weight: 600;
+    
+}
+#download_section>img{
+    width: 100px;
+}
 
 
 @media (max-width: 600px) {
@@ -190,5 +202,11 @@ button:hover {
         margin: 0px 100px 0px;
         width: 50%;
         height: auto;
+    }
+    #download_section > p
+    {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
     }
 }
