@@ -41,7 +41,7 @@ body {
 .college-dropdown {
     width: 100%;
     padding: 10px 0px;
-    background-color: #181414; /* Black background */
+    background-color: #201d1d; /* Black background */
     color: white; /* White text */
     border: none;
     border-bottom: 2px solid #bf9456; /* Border color to match the theme */
@@ -85,7 +85,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #181414;
+    background-color: #201d1d;
     border: 0px solid black;
     color: white;
     border-radius: 20px;
@@ -108,7 +108,7 @@ input,
     padding: 10px;
     border: none;
     font-size: 16px;
-    background-color: #181414; 
+    background-color: #201d1d; 
     border-bottom: 2px solid #bf9456;
     border-radius: 0;
     color: white;
