@@ -41,7 +41,7 @@ body {
 .college-dropdown {
     width: 100%;
     padding: 10px 0px;
-    background-color: black; /* Black background */
+    background-color: #181414; /* Black background */
     color: white; /* White text */
     border: none;
     border-bottom: 2px solid #bf9456; /* Border color to match the theme */
@@ -85,10 +85,11 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #181414;
     border: 0px solid black;
+    color: white;
     border-radius: 20px;
-    box-shadow: 0px -12px 1px #bf9456;
+    box-shadow: 0px -12px 2px #bf9456;
 }
 
 .form-group {
@@ -107,7 +108,7 @@ input,
     padding: 10px;
     border: none;
     font-size: 16px;
-    background-color: black; 
+    background-color: #181414; 
     border-bottom: 2px solid #bf9456;
     border-radius: 0;
     color: white;
