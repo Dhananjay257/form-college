@@ -1,10 +1,18 @@
+
+
+.open-sans-custom {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100; 
+    font-style: light;
+    font-variation-settings: "wdth" 100;
+}
+
 body {
-    /* font-family: var(--uicore-typography--h2-f, "Inter"); */
-    font-style: var(--uicore-typography--h2-st, "normal");
-    font-weight: var(--uicore-typography--h2-w, "600");
     margin: 0;
     padding: 0;
 }
+
 
 .container-fluid {
     padding: 70px;
@@ -28,6 +36,7 @@ body {
 .span-p
 {
     color:#bf9456;
+    font-weight: 700;
 }
 .logo {
     height: auto;
@@ -41,7 +50,7 @@ body {
 .college-dropdown {
     width: 100%;
     padding: 10px 0px;
-    background-color: #201d1d; /* Black background */
+    background-color: #26282A; /* Black background */
     color: white; /* White text */
     border: none;
     border-bottom: 2px solid #bf9456; /* Border color to match the theme */
@@ -64,7 +73,7 @@ body {
 }
 .form-header h1 {
     width: 95%;
-    font-weight: revert;
+    font-weight: 300;
     text-align: left;
     font-size: 70px;
     margin: 0 0 10px;
@@ -78,15 +87,15 @@ body {
 .form-header p {
     margin: 0 0 20px;
     display: flex;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .form-content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #201d1d;
-    border: 0px solid black;
+    background-color: #26282A;
+    border: 0px solid #26282A;
     color: white;
     border-radius: 20px;
     box-shadow: 0px -12px 2px #bf9456;
@@ -99,7 +108,7 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: 200;
 }
 
 input,
@@ -108,17 +117,22 @@ input,
     padding: 10px;
     border: none;
     font-size: 16px;
-    background-color: #201d1d; 
+    background-color: #26282A; 
     border-bottom: 2px solid #bf9456;
     border-radius: 0;
     color: white;
     box-shadow: none; 
     outline: none; 
+    height: 50%;
 }
 
 
 .form-group textarea {
     resize: vertical;
+}
+#college-type{
+    opacity: 0.5;
+    font-size:smaller;
 }
 
 button {
@@ -154,7 +168,7 @@ button:hover {
     align-items: center;
     gap: 15px;
     color: #666;
-    font-weight: 600;
+    font-weight: 500;
     
 }
 #download_section>img{
@@ -179,6 +193,11 @@ button:hover {
         border: none; /* Remove border */
         order: 1; /* Ensure form-content is above form-header */
     }
+    input,
+.form-group textarea {
+    height: 50%;
+}
+
 
     .info-text,
     .form-header .logo,
@@ -200,8 +219,8 @@ button:hover {
     }
 
     .logo {
-        margin: 0px 100px 0px;
-        width: 50%;
+        margin: 0px 149px;
+        width: 60%;
         height: auto;
     }
     #download_section > p
