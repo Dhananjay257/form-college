@@ -13,9 +13,13 @@ body {
     padding: 0;
 }
 
+.asterik{
+    color: red;
+}
+
 
 .container-fluid {
-    padding: 70px;
+    padding: 10px;
     background-color: white;
 }
 
@@ -47,6 +51,9 @@ body {
     position: relative;
     left: -35px;
 }
+.custom-select-wrapper {
+    position: relative;
+}
 .college-dropdown {
     width: 100%;
     padding: 10px 0px;
@@ -65,6 +72,14 @@ body {
 .college-dropdown:focus {
     outline: none; /* Remove default focus outline */
     box-shadow: 0 0 2px #bf9456; /* Add a subtle glow on focus */
+}
+.dropdown-icon {
+    position: absolute;
+    right: 1rem;
+    color: #bf9456;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;      /* Prevents the icon from blocking click events */
 }
 
 .form-gif img
@@ -98,7 +113,8 @@ body {
     border: 0px solid #26282A;
     color: white;
     border-radius: 20px;
-    box-shadow: 0px -12px 2px #bf9456;
+    box-shadow: 0px -7px 0px #bf9456;
+    
 }
 
 .form-group {
@@ -174,30 +190,50 @@ button:hover {
 #download_section>img{
     width: 100px;
 }
-
+.form-footer{
+   display: none; 
+}
 
 @media (max-width: 600px) {
     .container-fluid {
         padding: 0px;
     }
+    .form-header h1{
+        display: block;
+    }
+    .form-footer{
+        display: block;
+    }
+    .form-footer h1{
+        display: none;
+    }
 
-    .form-header {
-        text-align: center;
-        order: 2; /* Place form-header below form-content */
-        margin-bottom: 20px;
+    .form-header p{
+        display: none;
+    }
+
+    .form-footer p{
+        display: none;
+    }
+
+    .form-header #download_section {
+        display: none;
     }
     
     .form-content {
         margin-top: 20px;
         padding: 0; /* Remove padding */
         border: none; /* Remove border */
-        order: 1; /* Ensure form-content is above form-header */
+        order: 2; /* Ensure form-content is above form-header */
     }
     input,
 .form-group textarea {
     height: 50%;
 }
 
+   .info-text{
+    display: none;
+   }
 
     .info-text,
     .form-header .logo,
@@ -215,7 +251,7 @@ button:hover {
         
     }
     .form-gif img {
-        margin-right: 0%;
+        display: none;
     }
 
     .logo {
@@ -230,6 +266,6 @@ button:hover {
     }
     #download_section
     {   display: flex;
-       
+        order:3;
     }
 }
